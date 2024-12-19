@@ -6,8 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<style>
+    /* 添加一些基本的样式来模拟GitHub的Markdown渲染 */
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background-color: #f5f5f5;
+    }
+    .markdown-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
 <body>
+    <div class="markdown-content" id="markdown-content"></div>
+    <script>
+        // 假设这是你的Markdown内容，你可以从文件或其他来源获取它
+        var markdown = `# Hello, World!\n\nThis is a Markdown example.`;
+
+        // 使用Marked库将Markdown转换为HTML
+        var html = marked(markdown);
+
+        // 将生成的HTML内容插入到页面中
+        document.getElementById('markdown-content').innerHTML = html;
+    </script>
     <h2 align="center"><a href="https://www.luogu.com.cn/">洛谷首页</a></h2>
     <table border="1" id="content" align="center">
         <tr>

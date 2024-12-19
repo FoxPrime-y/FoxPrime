@@ -1,5 +1,5 @@
 <template>
-<a href="/docs/templates/index.html"><input type="submit" value="查看我的洛谷练习情况"></a>
+<a href="/docs/templates/luogu.html"><input type="submit" value="查看我的洛谷练习情况"></a>
     <div>
         <p>'# Hello VuePress'
             layout: page
